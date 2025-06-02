@@ -1,0 +1,1004 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  background: #fbfbfb;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #000000;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #000000;
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 48px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  h2 {
+    text-align: left;
+  }
+}
+
+/* ---------- header ---------- */
+
+header {
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul {
+  margin: 24px 0;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 28px;
+  color: #000;
+}
+
+/* ---------- home ---------- */
+.intro-wrapper {
+  margin-bottom: 80px;
+}
+
+.intro {
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.intro-left,
+.intro-right {
+  flex: 1;
+}
+
+.intro-left img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.intro-right {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box {
+  color: #0027d5;
+  text-align: left;
+  padding: 40px;
+}
+
+.text-box h1 {
+  font-weight: 900;
+  font-size: 88px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+}
+
+.text-box h3 {
+  font-family: "Cactus Classical Serif";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.intro-about {
+  position: relative;
+  max-width: 1077px;
+  padding: 80px 40px;
+  background-color: #ffffff;
+  margin-top: -160px;
+  margin-left: auto;
+  margin-right: 80px;
+  font-size: 28px;
+  font-weight: 500;
+  z-index: 999;
+}
+
+.intro-about p {
+  margin-bottom: 16px;
+}
+.intro-about .social ul {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .text-box h1 {
+    font-size: 64px;
+  }
+
+  .intro-about {
+    margin: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-box h1 {
+    font-size: 64px;
+  }
+
+  .intro-about {
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .intro-right {
+    aspect-ratio: 4 / 4;
+    align-items: start;
+  }
+
+  .text-box {
+    padding: 24px;
+  }
+
+  .text-box h1 {
+    font-size: 52px;
+  }
+
+  .intro-about {
+    top: -160px;
+    margin: 0 12px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 376px) {
+  .serve-wrapper h2 {
+    margin-left: 12px;
+    text-align: left;
+  }
+}
+
+/* ---------- serve ---------- */
+.serve {
+  max-width: 1920px;
+  border-bottom: 1px solid #6c757d;
+}
+
+.serve-wrapper {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  max-width: 1296px;
+}
+
+.serve-wrapper .container {
+  padding: 0;
+}
+
+.serve-list {
+  margin: 32px 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.left-style {
+  max-width: 1076px;
+  display: flex;
+}
+
+.right-style {
+  max-width: 1076px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.serve-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  max-width: 480px;
+  color: #4b4b4b;
+}
+
+.right-text {
+  margin-left: -40px;
+  padding: 24px;
+  background: #ffffff;
+  z-index: 998;
+}
+
+.left-text {
+  margin-right: -40px;
+  padding: 24px;
+  background: #ffffff;
+  z-index: 998;
+}
+
+.serve-text .dash-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serve-text h4 {
+  margin-bottom: 8px;
+}
+
+.connect-text {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.connect-text h4 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #000000;
+  margin-right: 8px;
+}
+
+@media (max-width: 1024px) {
+  .left-style,
+  .right-style {
+    flex-direction: column;
+    background: #ffffff;
+  }
+
+  .right-text {
+    margin-left: 0;
+  }
+
+  .left-text {
+    margin-right: 0;
+  }
+
+  .connect-text {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .serve-list {
+    margin: 32px 12px;
+    gap: 32px;
+  }
+
+  .connect-text {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .connect-text h4 {
+    margin-right: 0;
+  }
+}
+
+/* ---------- blog ---------- */
+.blog {
+  position: relative;
+  border-top: 1px solid #6c757d;
+  border-bottom: 1px solid #6c757d;
+}
+
+.blog-wrapper {
+  margin: 80px auto;
+  max-width: 1296px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 80px;
+  gap: 24px;
+}
+
+.arrow-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  max-width: 1432px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.left-arrow,
+.right-arrow {
+  flex-shrink: 0;
+}
+
+.left-arrow img,
+.right-arrow img {
+  width: 44px;
+  height: 44px;
+}
+
+.card {
+  max-width: 416px;
+}
+
+.card img {
+  object-fit: cover;
+  object-position: center center;
+  height: auto/ 100%;
+}
+
+.article-text {
+  margin-top: 16px;
+}
+
+.article-text h5 span {
+  width: 88px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0%;
+  color: #ffffff;
+  background-color: #0027d5;
+  gap: 8px;
+  border-radius: 40px;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.card .detail {
+  color: #000000;
+  margin-top: 8px;
+}
+
+.card h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #0027d5;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.article-text .detail {
+  height: 48px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.article-text button {
+  width: 88px;
+  height: 36px;
+  margin-top: 16px;
+  border-radius: 40px;
+  color: #4b4b4b;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .card-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .card-list .two,
+  .card-list .three {
+    display: none;
+  }
+
+  .arrow-box {
+    position: static;
+    max-width: 50%;
+    display: flex;
+    justify-content: end;
+    transform: translate(90%, -300%);
+    gap: 24px;
+    z-index: 999;
+  }
+}
+
+@media (max-width: 376px) {
+  .blog-wrapper h2 {
+    text-align: left;
+  }
+}
+
+/* ---------- case ---------- */
+
+.case-wrapper {
+  margin: 80px auto;
+  max-width: 1296px;
+}
+
+.title-item {
+  display: inline;
+}
+
+.case-info {
+  margin-top: 24px;
+}
+
+.info-top {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.img-box {
+  max-width: 745px;
+  background: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box img {
+  padding: 24px;
+  object-fit: cover;
+}
+
+.about-consult {
+  margin: 29px 0;
+  margin-left: -195px;
+}
+
+.about-consult .dash-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-top {
+  max-width: 526px;
+  padding: 80px 40px;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.about-top p {
+  margin-top: 24px;
+  font-weight: 700;
+}
+
+.about-top p span {
+  color: #0027d5;
+}
+
+.about-bottom {
+  width: 526px;
+  margin-top: -40px;
+  margin-left: 219px;
+  margin-right: 0;
+  padding: 80px 40px;
+  background-color: #ededed;
+  z-index: 999;
+}
+
+.about-bottom p {
+  margin-top: 24px;
+  font-weight: 700;
+}
+
+.about-bottom a {
+  display: block;
+  max-width: 128px;
+  margin-top: 24px;
+  padding: 7px 15px;
+  font-weight: 700;
+  border: 1px solid #0027d5;
+  border-radius: 40px;
+  color: #0027d5;
+  background-color: #ffffff;
+}
+
+.info-bottom {
+  background: #f5f5f5;
+}
+
+.case-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1296px;
+  padding: 24px;
+}
+
+.case-card {
+  width: 294px;
+}
+
+.case-card img {
+  margin-bottom: 16px;
+}
+
+.case-card h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.check-list p {
+  display: block;
+}
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+  gap: 8px;
+  color: #4b4b4b;
+  border-bottom: 1px solid #4b4b4b;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+}
+
+.check-item .check-box {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-box img {
+  margin: 0;
+}
+
+.case-card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 161px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  color: #4b4b4b;
+}
+
+@media (max-width: 1024px) {
+  .img-box img {
+    height: 578px;
+  }
+
+  .info-top {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-consult {
+    margin: 0;
+    display: flex;
+  }
+
+  .about-top {
+    width: 50%;
+    padding: 40px 24px;
+    margin: 0;
+  }
+
+  .about-bottom {
+    width: 50%;
+    padding: 40px 24px;
+    margin: 0;
+  }
+
+  .case-list {
+    flex-wrap: wrap;
+  }
+
+  .case-card {
+    max-width: none;
+    width: calc(50% - 12px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-wrapper h2 {
+    text-align: left;
+  }
+
+  .title-item {
+    display: block;
+  }
+}
+
+@media (max-width: 376px) {
+  .case-wrapper {
+    margin: 64px 12px;
+  }
+
+  .case-wrapper h2 {
+    overflow-wrap: break-word;
+  }
+
+  .about-consult {
+    flex-direction: column;
+  }
+  .case-card {
+    width: 100%;
+  }
+
+  .about-top {
+    width: 100%;
+  }
+
+  .about-bottom {
+    width: 100%;
+  }
+}
+/* ---------- subscription ---------- */
+.subscription {
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.subscription-left,
+.subscription-right {
+  max-width: 960px;
+  flex: 1;
+}
+
+.subscription-left img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.subscription-right {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-box {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  max-width: 800px;
+  width: 100%;
+  font-size: 20px;
+  background: #ffffff;
+}
+
+.subscription-box form {
+  width: 100%;
+}
+
+.subscription-box p {
+  margin: 16px 0 24px;
+  color: #000;
+}
+
+.subscription-box span {
+  color: #0027d5;
+}
+
+.subscription-box button {
+  display: block;
+  max-width: 96px;
+  margin-top: 24px;
+  padding: 7px 15px;
+  font-weight: 700;
+  border: 1px solid #0027d5;
+  border-radius: 40px;
+  color: #0027d5;
+  background-color: #ffffff;
+}
+
+.subscription-box .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subscription-box input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+  height: 46px;
+  font-size: 20px;
+  background: #f1f1f1;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .subscription {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscription-right {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .subscription-box {
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 376px) {
+  .subscription-right {
+    max-width: 375px;
+  }
+
+  .subscription-box h2 {
+    text-align: start;
+  }
+}
+
+/* ---------- contact ---------- */
+
+.contact-wrapper {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.contact-group {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-group li {
+  border-bottom: 1px solid #000;
+}
+
+.contact-group li a {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+  color: #000;
+}
+
+.contact-group .contact-email {
+  font-size: 32px;
+  border-bottom: 1px solid #000;
+}
+
+@media (max-width: 1024px) {
+  .contact-group .contact-email {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 376px) {
+  .contact-wrapper {
+    margin: 0 12px;
+  }
+
+  .contact-group .contact-email {
+    font-size: 24px;
+  }
+
+  .contact-group li a {
+    font-size: 24px;
+  }
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  margin: 0 auto;
+  padding: 24px 0;
+  border: 1px solid #4b4b4b;
+  text-align: center;
+}
